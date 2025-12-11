@@ -51,11 +51,12 @@ ggplotly(dv1)
 ```
 
 Table Section
+
 ```{r}
-islands_tbl <-  tibble(    name = names(islands),    size = islands  ) |>  slice_max(size, n = 10)# Display the table
+islands_tbl <-  tibble(    name = names(islands),    size = islands  ) |>  slice_max(size, n = 10)
+# Display the table
 
 islands_tbl
 gt_tbl <- gt(islands_tbl)# Show the gt Table
 gt_tbl
 ```
-
