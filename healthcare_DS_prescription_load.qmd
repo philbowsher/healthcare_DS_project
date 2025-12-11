@@ -19,7 +19,7 @@ pca_202509 <- read_csv("https://opendata.nhsbsa.net/dataset/358e443c-b299-4370-a
 
 ```
 
-## Subsetting
+## Subsetting data
 ```{r}
 
 pca_202509 <- pca_202509 %>%
