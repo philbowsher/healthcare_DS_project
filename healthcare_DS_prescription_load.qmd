@@ -7,12 +7,15 @@ editor: visual
 Data Sci Workflow
 
 ## Packages
+
 ```{r}
 library("tidyverse")
 library("plotly")
+library("gt")
 ```
 
 ## Data load
+
 ```{r}
 library(readr)
 pca_202509 <- read_csv("https://opendata.nhsbsa.net/dataset/358e443c-b299-4370-aed4-eca63ce3ba68/resource/c8c5d961-d0f9-4e4f-9e4d-7eb0dcf25cb5/download/pca_202509.csv")
@@ -20,6 +23,7 @@ pca_202509 <- read_csv("https://opendata.nhsbsa.net/dataset/358e443c-b299-4370-a
 ```
 
 ## Subsetting data
+
 ```{r}
 
 pca_202509 <- pca_202509 %>%
@@ -32,6 +36,7 @@ pca_202509 <- pca_202509 %>%
 ```
 
 ## Data Viz
+
 ```{r}
 dv1 <- ggplot(pca_202509) +
   aes(x = REGION_CODE, fill = DISPENSER_ACCOUNT_TYPE) +
@@ -43,5 +48,10 @@ dv1
 
 ```{r}
 ggplotly(dv1)
+```
+
+Table Section
+```{r}
+
 ```
 
