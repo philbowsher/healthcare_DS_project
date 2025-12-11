@@ -5,7 +5,6 @@ This module provides utilities for loading and accessing healthcare data.
 """
 
 import pandas as pd
-import os
 from pathlib import Path
 
 
@@ -31,9 +30,18 @@ class HealthcareDataLoader:
         
         Returns:
             DataFrame with healthcare expenditure by country and year
+        
+        Raises:
+            FileNotFoundError: If the data file does not exist
+            pd.errors.ParserError: If the CSV file is malformed
         """
         file_path = self.data_dir / 'european_health_expenditure.csv'
-        return pd.read_csv(file_path)
+        try:
+            return pd.read_csv(file_path)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Data file not found: {file_path}")
+        except pd.errors.ParserError as e:
+            raise pd.errors.ParserError(f"Error parsing CSV file {file_path}: {e}")
     
     def load_life_expectancy(self):
         """
@@ -41,9 +49,18 @@ class HealthcareDataLoader:
         
         Returns:
             DataFrame with life expectancy by country, year, and gender
+        
+        Raises:
+            FileNotFoundError: If the data file does not exist
+            pd.errors.ParserError: If the CSV file is malformed
         """
         file_path = self.data_dir / 'life_expectancy_data.csv'
-        return pd.read_csv(file_path)
+        try:
+            return pd.read_csv(file_path)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Data file not found: {file_path}")
+        except pd.errors.ParserError as e:
+            raise pd.errors.ParserError(f"Error parsing CSV file {file_path}: {e}")
     
     def load_hospital_beds(self):
         """
@@ -51,9 +68,18 @@ class HealthcareDataLoader:
         
         Returns:
             DataFrame with hospital bed availability by country and year
+        
+        Raises:
+            FileNotFoundError: If the data file does not exist
+            pd.errors.ParserError: If the CSV file is malformed
         """
         file_path = self.data_dir / 'hospital_beds.csv'
-        return pd.read_csv(file_path)
+        try:
+            return pd.read_csv(file_path)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Data file not found: {file_path}")
+        except pd.errors.ParserError as e:
+            raise pd.errors.ParserError(f"Error parsing CSV file {file_path}: {e}")
     
     def get_countries(self):
         """
