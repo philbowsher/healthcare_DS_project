@@ -1,0 +1,46 @@
+country,year,hospital_beds_per_1000,icu_beds_per_100000
+Austria,2020,7.3,29.2
+Austria,2021,7.2,29.5
+Austria,2022,7.1,29.8
+Belgium,2020,5.6,15.9
+Belgium,2021,5.5,16.2
+Belgium,2022,5.5,16.5
+Denmark,2020,2.6,6.7
+Denmark,2021,2.6,6.9
+Denmark,2022,2.5,7.1
+France,2020,5.9,16.3
+France,2021,5.8,16.6
+France,2022,5.7,16.9
+Germany,2020,8.0,33.9
+Germany,2021,7.9,34.2
+Germany,2022,7.8,34.5
+Greece,2020,4.2,6.1
+Greece,2021,4.2,6.3
+Greece,2022,4.1,6.5
+Italy,2020,3.1,12.5
+Italy,2021,3.0,12.8
+Italy,2022,3.0,13.1
+Netherlands,2020,3.2,7.1
+Netherlands,2021,3.1,7.4
+Netherlands,2022,3.1,7.7
+Norway,2020,3.5,8.0
+Norway,2021,3.4,8.2
+Norway,2022,3.4,8.5
+Poland,2020,6.6,10.5
+Poland,2021,6.5,10.8
+Poland,2022,6.4,11.1
+Portugal,2020,3.4,6.6
+Portugal,2021,3.3,6.9
+Portugal,2022,3.3,7.2
+Spain,2020,3.0,9.7
+Spain,2021,2.9,10.0
+Spain,2022,2.9,10.3
+Sweden,2020,2.1,5.8
+Sweden,2021,2.0,6.0
+Sweden,2022,2.0,6.2
+Switzerland,2020,4.6,11.0
+Switzerland,2021,4.5,11.3
+Switzerland,2022,4.5,11.6
+United Kingdom,2020,2.5,10.5
+United Kingdom,2021,2.4,10.8
+United Kingdom,2022,2.4,11.1
